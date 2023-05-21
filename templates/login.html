@@ -1,0 +1,29 @@
+{% extends "index.html" %}
+{% block nav %}
+{% endblock %}
+
+{% block content %}
+
+<h1 class = "text-center" id = "loginH1">Login!</h1>
+<form action="/login" method = "post">
+<div class = "container text-center" id="loginBox">
+    {{form.hidden_tag()}}
+    {% for field in form if field.widget.input_type != 'hidden' %}
+<p>
+    {{field.label}}
+    {{field(class="formBox")}}
+
+    {% for err in field.errors %}
+    <span >{{err}}</span>
+    {% endfor %}
+
+</p>
+{% endfor %}
+<button type="submit" class = "btn btn-primary loginBtn">Login!</button>
+</div>
+</form>
+<p class = "text-center" id="register">
+    Don't have an account? Register <a href="/register">Here!</a> or go <a href="/">back</a>
+</p>
+
+{% endblock %}

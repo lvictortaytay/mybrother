@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBrother</title>
+    <link rel="stylesheet" href="static/app.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+</head>
+<nav>
+    {% if session['loggedIn'] == 'True' %}
+    <a href = "/login" id = "loginLink"> {{session['user']}} </a>
+    {% else %}
+    <a href = "/login" id = "loginLink"> login! </a>
+    {% endif %}
+    
+    <a href = "/" id = "homeLink"> Logout! </a>
+    <a href = "/versions" id="versions">versions</a>
+    <h4 id = "myBrotherTab">MyBrother</h4>
+</nav>
+<body>
+     <div class = "makePostFm">
+             <form class = "text-center" action = "/makePost" method = "get">
+                <span class = "text-secondary">Make a Post!</span>
+                <input type="text" class = "form-group mx-sm-3 mb-2" id = "postBox" name = "text">
+                <button type="submit" class = "btn btn-secondary" id ="postBtn">Post!</button>
+             </form>
+     </div>
+
+
+    <div class = "leftBox">
+        <h3 class = "text-center catBar">Catagories</h1><hr>
+            <ul>
+                <a><li>school</li></a><br>
+                <a><li>work</li></a><br>
+                <a><li>sports</li></a><br>
+                <a><li>family</li></a><br>
+                <a><li>Church</li></a><br>
+                <a><li>Relationships</li></a><br>
+                <a><li>Food</li></a><br>
+                <a><li>Travel</li></a><br>
+                <a><li>Fear</li></a><br>
+                <a><li>Worry</li></a><br>
+                <a><li>Stress</li></a><br>
+                <a><li>Gym</li></a><br>
+             
+            </ul>
+    </div>
+
+
+    <div class = "container text-center" id = "postBox">
+        {% for user in users %}
+        <p>{{user.text}}</p>
+        {% endfor %}
+        
+    </div>
+
+
+    <div class = "rightBox">
+        <h3 class = "text-center messageBar ">Messages</h1><hr>
+        <p>no new messages</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}<title>Document</title>{% endblock %}
+    <link rel="stylesheet" href="static/app.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    
+</head>
+{% block nav %}
+<nav class = "nav">
+    <a href = "/login" id = "loginLink"> login! </a> 
+    <a href = "/home" id = "homeLink"> Home! </a>
+</nav>
+{% endblock %}
+
+<body>
+    <!-- <h1 class = "text-center" id = "loginH1"> login </h1> -->
+    {% block content %}
+    <h1 class = "text-center">versions!</h1>
+    {% for name in versions %}
+    <ul>
+        <li><a href="">{{name}}</a></li>
+    </ul>
+    {% endfor %}
+
+
+</body>
+</html>
+{% endblock %}

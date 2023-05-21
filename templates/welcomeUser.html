@@ -1,0 +1,15 @@
+{% extends "welcome.html" %}
+{% block content %}
+<body class = "welcome-body">
+    <h1 class="text-center" id="welcome">MyBrother</h1>
+    {% block form %}
+    <form action="/home" method="get" class = 'text-center'>
+        {% block welcome %}
+        <button type="submit" class = "welcome-btn1" id = "welcomeBtn1">Welcome {{user}}!</button>
+        {% endblock %}
+    </form>
+{% endblock %}
+</body>
+{% endblock %}
+
+

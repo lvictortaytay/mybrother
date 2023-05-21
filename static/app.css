@@ -1,0 +1,314 @@
+nav{
+    width: 80rem;
+    background-color: rgb(0, 157, 255);
+    /* border-radius: 10px; */
+    padding-top: 10px;
+    padding-bottom: 7px;
+    margin-top: -1rem;
+    margin-left: 0px;
+    box-shadow: 1px 2px 10px grey;
+    position: fixed;
+
+}
+#myBrotherTab{
+    color:white;
+    margin-left: 10px;
+
+}
+#homeLink{
+    transition: .1s;
+    margin-left: 65rem;
+    color:white;
+    font-weight: 400;
+    text-decoration: none;
+    position:fixed;
+    
+}
+#homeLink:hover{
+    transition: .1s;
+    color:white;
+    font-weight: 400;
+    text-decoration: none;
+    position:fixed;
+}
+#loginH1{
+    position:fixed;
+    margin-left: 33rem;
+    margin-top: -4rem;
+    z-index: 6;
+}
+#registerH1{
+    position:absolute;
+    margin-left: 31.5rem;
+    margin-top: -4rem;
+
+}
+#loginLink{
+    transition: .1s;
+    margin-left: 54rem;
+    color:white;
+    font-weight: 400;
+    text-decoration: none;
+    position: fixed;
+}
+#loginLink:hover{
+    transition: .1s;
+    color:white;
+    font-weight: 400;
+    text-decoration: none;
+}
+#versions{
+    transition: .1s;
+    margin-left: 60rem;
+    color:white;
+    font-weight: 400;
+    text-decoration: none;
+    position:fixed;
+}
+#versions:hover{
+    transition: .1s;
+    color:white;
+    font-weight: 400;
+    text-decoration: none;
+    position:fixed;
+}
+
+
+a{
+    color:black;
+    text-decoration: none;
+}
+a:hover{
+    color:rgb(118, 118, 255);
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+#welcome{
+    color:white;
+    margin-top: 12rem;
+}
+.welcome-body{
+    background-color: #0275d8;
+    
+}
+.welcome-btn:not(:hover){
+    transition: .2s;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0px 0px 14px rgba(255, 255, 255, 0.256);
+}
+.welcome-btn1:not(:hover){
+    transition: .2s;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+    border-color: white;
+    border: 1px solid white;
+    border-radius: 9px;
+    padding: 5px;
+}
+.welcome-btn1:hover{
+    color: #0275d8;
+    transition: .2s;
+    border: 2px solid white;
+    border-radius: 9px;
+    background-color: white;
+    padding: 15px;
+
+}
+.welcome-btn:hover{
+    color: #0275d8;
+    transition: .2s;
+    border: 2px solid white;
+    border-radius: 9px;
+    background-color: white;
+    padding: 15px;
+
+}
+.loginswitch-btn{
+    transition: .2s;
+    border: 3px solid white;
+    border-radius: 9px;
+    background-color: white;
+    padding: 15px;
+    color: #0275d8;
+}
+.loginswitch-btn:hover{
+    transition: .2s;
+    border: 3px solid white;
+    border-radius: 9px;
+    background-color: white;
+    padding: 15px;
+    color: #0275d8;
+}
+
+#welcome{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:xx-large;
+}
+#loginBox{
+    position: relative;
+    margin-top: 9rem;
+    padding: 20px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 10px grey;
+    width: 20rem;
+    height: 8rem;
+}
+#registerBox{
+    margin-top: 1rem;
+    padding: 20px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 10px grey;
+    width: 15rem;
+    height: 19rem;
+
+}   
+.registerFormBox{
+    margin-top: 10rem;
+    display: flex;
+}
+#register{
+    padding-top: 90px;
+}
+a{
+    text-decoration: none;
+ 
+}
+a:hover{
+    transition: .2s;
+
+    font-size: larger;
+    font-weight: 600;
+}
+.formBox{
+    border-radius: 10px;
+    border: .5px solid grey;
+}
+.createBtn{
+    margin-top: 2rem;
+}
+.createBtn:hover{
+    transition: .2s;
+    padding-top: 10px;
+}
+.loginBtn{
+    margin-top: 3rem;
+}
+.loginBtn:hover{
+    transition: .2s;
+    padding-top: 10px;
+}
+.entryBackground{
+    transition: 1s;
+    background-color: white;
+}
+.clickedWelcome{
+    transition: 1s;
+    background-color: white;
+    color:white;
+    border: 10px solid white;
+    border-radius: 9px;
+    padding: 30px;
+}
+.errorMsg{
+    margin-top: 1rem;
+    font-size: 15px;
+    color: rgb(251, 61, 61);
+
+}
+#postBox{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid white;
+    box-shadow: 1px 1px 9px 10px rgb(240, 240, 240);
+    width: 35rem;
+    margin-left: 18.5rem;
+    /* display: inline-block; */
+    margin-top: -30rem;
+    z-index: -1;
+    overflow: auto;
+
+  
+}
+.makePostFm{
+    margin-top: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    margin-left: 10.1rem;
+    width: 50rem;
+    align-items: center;
+    
+
+}
+#postBox{
+    border-radius: 10;
+    overflow: auto;
+
+}
+.leftBox{
+    /* display: inline; */
+    background-color: rgb(255, 255, 255);
+    border: 1px solid white;
+    box-shadow: 1px 1px 9px 10px rgb(240, 240, 240);
+    width: 15rem;
+    margin-left: 0rem;
+    height: 30rem;
+    margin-top: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    z-index: -1;
+    overflow: auto;
+
+
+
+    
+}
+.rightBox{
+    /* display: inline; */
+    background-color: rgb(255, 255, 255);
+    border: 1px solid white;
+    box-shadow: 1px 1px 9px 10px rgb(240, 240, 240);
+    width: 15rem;
+    height: 30rem;
+    margin-left: 57rem;
+    margin-top: -55rem;
+    /* display: inline-block; */
+    padding-left: 1rem;
+    padding-right: 1rem;
+    z-index: -1;
+    text-align: center;
+    overflow:auto;
+  
+}
+#postBtn{
+    box-shadow: 1px 1px 10px grey;
+    border-radius: 0;
+    height: 40px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+.messageBar{
+    color:rgb(0, 157, 255);
+}
+.catBar{
+    color:rgb(0, 157, 255);
+}
+li{
+    transition: .1s;
+    border: 1px solid white;
+    margin-left: -40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 13px rgb(189, 189, 189);
+}
+li:hover{
+    transition: .1s;
+    color:rgb(0, 157, 255);
+}
